@@ -6,7 +6,7 @@ openai.api_key = config.OPENAI_API_key
 def productDescription(query):
 response = openai.Completion.create(
   model="davinci-instruct-beta",
-  prompt="Generate a detailed product description for:{}".format(query),
+  prompt="Generate a detailed product description for: {}".format(query),
   temperature=0.6,
   max_tokens=200,
   top_p=1,
